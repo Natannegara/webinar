@@ -1,7 +1,7 @@
 
 steps:
 - name: 'docker'
-  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/helloworld-image', '-f', 'webinar/01-hello-world-app/Dockerfile', '.' ]
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/helloworld-image', '.' ]
 
 images:
 - 'gcr.io/$PROJECT_ID/helloworld-image'
