@@ -6,7 +6,7 @@ steps:
 images:
 - 'gcr.io/$PROJECT_ID/helloworld-image'
 
-tags: ['gcp-cloud-build-sample-build']
+#tags: ['gcp-cloud-build-sample-build']
 
 
 
