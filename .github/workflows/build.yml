@@ -1,11 +1,6 @@
 name: Continous integration
 on: 
   workflow_dispatch:
-    inputs: 
-      job:
-        description: 'running deploy process manually'
-        required: true
-        default: 'deploy'
 #   push:
 #     branches: [ main ]
 #     # Publish semver tags as releases.
