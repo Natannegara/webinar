@@ -1,5 +1,5 @@
-name: Docker
-on: [workflow_dispatch]
+name: webinar
+on: [pull_request, workflow_dispatch]
 #   push:
 #     branches: [ main ]
 #     # Publish semver tags as releases.
