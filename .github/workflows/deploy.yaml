@@ -1,0 +1,24 @@
+name: Continous Deployment
+on: 
+  workflow_dispatch:
+    inputs: 
+      job:
+        description: 'running deploy process manually'
+        required: true
+        default: 'deploy'
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  TAG_IMAGE: ghcr.io/lintasarta/test:${{ github.ref_name }}
+
+jobs:        
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    steps:
+      - name: Print Value Pada Deploy
+        run: echo ${{ env.TAG_IMAGE }}
