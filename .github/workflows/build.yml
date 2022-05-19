@@ -1,10 +1,11 @@
 name: Continous integration
 on: 
   workflow_dispatch:
-#   push:
+  push:
 #     branches: [ main ]
 #     # Publish semver tags as releases.
-#     tags: [ 'v*.*.*' ]
+    tags: 
+      - "dev-*"
 #   pull_request:
 #     branches: [ main ]
 env:
