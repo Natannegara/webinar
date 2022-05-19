@@ -1,6 +1,5 @@
 name: Continous integration
-on: 
-  workflow_dispatch:
+on:
   push:
     tags: 
       - dev-**
