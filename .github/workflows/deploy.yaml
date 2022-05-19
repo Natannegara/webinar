@@ -1,6 +1,13 @@
 name: Continous Deployment
 on: 
   workflow_dispatch:
+  push:
+#     branches: [ main ]
+#     # Publish semver tags as releases.
+    tags: 
+      - "dev-*"
+#   pull_request:
+#     branches: [ main ]
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
