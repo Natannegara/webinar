@@ -1,9 +1,6 @@
 name: Continous Deployment
 on: 
   workflow_dispatch:
-  push:
-    tags: 
-      - "dev-*"
 #   pull_request:
 #     branches: [ main ]
 env:
