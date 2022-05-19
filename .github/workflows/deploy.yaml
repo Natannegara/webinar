@@ -2,8 +2,6 @@ name: Continous Deployment
 on: 
   workflow_dispatch:
   push:
-#     branches: [ main ]
-#     # Publish semver tags as releases.
     tags: 
       - "dev-*"
 #   pull_request:
